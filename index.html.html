@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Singhan Lottary</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+  }
+  header {
+    background: yellow;
+    color: red;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav {
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0;
+  }
+nav a {
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    background-color: #ffc107;
+    color: #fbc2eb;
+  }
+  .notice-bar {
+    background: #ffc107;
+    color: #1a237e;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 600;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+text-align: center;
+  }
+ main h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  main p.date {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .download-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .download-box {
+    background: gray;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+  .time {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 10px;
+  }
+.btn {
+    display: inline-block;
+    background: #26a69a;
+    color: blue;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn.disabled {
+    background: #bdbdbd;
+    cursor: default;
+  }
+  .info-text {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+  }
+  footer {
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 60px;
+    font-size: 14px;
+  }
+ /* Responsive */
+  @media (max-width: 600px) {
+    .download-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+    main {
+      padding: 20px;
+      margin: 20px 15px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Singhan Lottery</header>
+
+<nav>
+  <a href="#" class="active">Home</a>
+  <a href="#">Schemes</a>
+  <a href="#">Old Results</a>
+  <a href="file:///C:/Users/rrick/Documents/index/contact.html">  Contact  </a>
+</nav>
+
+<div class="notice-bar"><marquee>
+Welcome To Bhutan State Singhan Lottery...</marquee>
+</div>
+<main>
+  <h2>Download Today's Result :</h2>
+  <p class="date">07-12-2025</p>
+
+  <div class="download-section">
+    <div class="download-box">
+      <div class="time">01:30 PM</div>
+      <a href="file:///C:/Users/rrick/Documents/index/result.pdf" class="btn">PDF</a>
+  
+    </div>
+
+    <div class="download-box">
+      <div class="time">08:30 PM</div>
+      <span class="btn disabled">PDF</span>
+      <p class="info-text">PDF Result Not Uploaded. Please Wait</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Home | Schemes | Old Results | Contact <br />
+  © 2025 Singhan Lottery. All Rights Reserved.
+</footer>
+
+</body>
+</html>
